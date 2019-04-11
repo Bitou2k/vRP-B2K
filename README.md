@@ -1,8 +1,9 @@
 # vRP-B2K
 Base vRP (versão 0.5) modificada para o servidor B2K Roleplay. http://bitou2k.com/discord
 
-# Discord
+# Socials
 
+Dev Twitch: www.twitch.tv/beetle2k
 Entre no discord do B2K Development para mais novidades: https://discord.gg/chfSzQV
 
 # Modificações B2K:
@@ -16,7 +17,6 @@ Entre no discord do B2K Development para mais novidades: https://discord.gg/chfS
 - Adicionado Webhook do Discord no Server.cfg para Logs da base.
 - Separado Coordenadas de Primeiro Spawn e Respawn de Morte.
 - Vida Padrão do Jogador é 400 (Antes 200).
-- Ajustes no Proxy/Tunnel do vRP para dificultar Injects.
 - Scripts vRP Atualizados: Barbershop, Drugs, Doors, FirstID, HotKeys, Barrier, Bank, Holdup, HUD, Id Display, Tow.
 - Adicionado Scripts Customizados B2K Snippets: AFK Kick, Announcer, Anticheater, Loading Freeze, No Drive By, OutlawAlert, NoSuffle, Recoil, Pause Menu, Watermark, WheatherSync, World Weapons Disable.
 - Correção Garagem ao perder veículo.
