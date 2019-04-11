@@ -1,10 +1,6 @@
 # vRP-B2K
 Base vRP (versão 0.5) modificada para o servidor B2K Roleplay. http://bitou2k.com/discord
 
-# Donate
-
-PayPal: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BSQHNZGZRPJFS
-
 # Discord
 
 Entre no discord do B2K Development para mais novidades: https://discord.gg/chfSzQV
@@ -106,7 +102,7 @@ HOME = Player List
 - Optimized Menu Emotes, Animations Grouping.
 - Added Behavior Menu.
 - Created Pre Missions in vRP Basic Missions: Arms Dealer, Drug Trafficking.
-- F1 to Police Algemar, F2 to Police sends automatic QTH.
+- F1 to Police Handcuff, F2 to Police sends automatic QTH.
 - Added animation for Police in the Radio: Alt left.
 - Re-written Chat script with command suggestions.
 - Rewritten NPC Control script to optimize FPS.
@@ -142,13 +138,10 @@ HOME = Player List
 - /tpall = Get everyone online.
 - /parall = Give Parachutes to everyone online.
 
-# I'm posting it on my Github:
-https://github.com/beetle2k/vRP-B2K 
-
 # B2K Development Discord:
 https://discord.gg/chfSzQV
 
 # Credits
-Cat (vRP Framework)
+ImagicTheCat (vRP Framework)
 Sighmir (vRP Scripts)
 B2K Roleplay Players (My Server)
