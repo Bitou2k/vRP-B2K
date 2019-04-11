@@ -1,0 +1,248 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+img {
+  vertical-align:middle;
+  border:0;
+}
+@font-face {
+  font-family: 'Pricedown';
+  src: url(fonts/Pdown.woff);
+}
+
+@font-face {
+  font-family: bankgothic;
+  src: url(nui://vrp/gui/fonts/bankgothic.ttf);
+}
+
+/* make body full page */
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: bankgothic;
+}
+
+.console{
+  background-color: white;
+  color: red;
+  font-weight: bold;
+}
+
+#vendaolhos
+{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: bankgothic;
+	background-color: black;
+	text-align: center;
+	vertical-align: center;
+	color: white;
+	z-index: 999999;
+	display: none;
+}
+
+/* menu */
+
+.menu {
+  position: absolute;
+  top: 220px !important;
+  left: 5px;
+  background-color: rgba(0,0,0,0.65) !important;
+  font-family: bankgothic; 
+  color: white;
+  width: 230px;
+  height: 40%;
+  font-weight: normal;
+  text-align: left;
+  align-content:left;
+  font-size: 14px;
+  z-index:99999999;
+}
+
+.menu_description{
+  background-color: rgba(0,0,0,0.75);
+  font-family: bankgothic;
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 0.9em;
+  max-width: 500px;
+}
+
+.menu h1{
+  font-family: 'Pricedown', sans-serif;
+  background-color: rgba(255,0,0,0.75);
+  color: white;
+  text-align: center;
+  font-size: 1.6em;
+  padding: 6px;
+}
+
+.choices{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.choices::-webkit-scrollbar{ 
+  display: none; 
+}
+
+.choices > div{
+  vertical-align: middle;
+  padding: 8px;
+  font-size: 1.0em;
+  line-height: 16px;
+}
+
+.choices .selected{
+  background-color: rgba(255,255,255,0.90);
+  color: black;
+}
+
+/* progress bar */
+.progressbar{
+  position: absolute;
+  border:2px solid rgba(53,53,53,1);
+}
+
+.progressbar .inner{
+  
+}
+.progressbar .label{
+  
+  font-family: bankgothic; 
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  font-size: 8px;
+}
+
+/* dynamic class progress bar */
+.dprogressbar{
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.dprogressbar .inner{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.dprogressbar .label{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  vertical-align: middle;
+  top: 0;
+  left: 0;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+/* wprompt */
+.wprompt{
+  position: absolute;
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  font-family: bankgothic !important;
+}
+
+.wprompt h1{
+  font-size: 10px;
+}
+
+.wprompt textarea{
+  outline: none !important;
+  background-color: rgba(0,0,0,0.75);
+  border: 1px solid rgba(255,255,255,0.30);
+  flex: 1;
+  color: white;
+  width: 100%;
+  padding: 4px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.wprompt textarea:focus{
+  outline: none !important;
+}
+
+.wprompt .help{
+  font-size: 12px;
+  font-style: italic;
+  padding: 3px;
+}
+
+/* request manager */
+.request_manager{
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  text-align: right;
+  font-family: bankgothic !important;
+}
+
+.request_manager div{
+  margin-top: 10px;
+  font-family: bankgothic !important;
+}
+
+.request_manager div > span{
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.50);
+  padding: 4px;
+  font-family: bankgothic !important;
+}
+
+.request_manager .yes{
+  padding-left: 15px;
+  color: rgb(0,255,0);
+  font-size: 13px;;
+}
+
+.request_manager .no{
+  color: rgb(255,0,0);
+  font-size: 13px;;
+}
+
+/* announce */
+
+.announce{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 780px;
+  height: 130px;
+  padding: 10px;
+  margin-left: -400px;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-shadow: 2px 2px black;
+  color: white;
+  display: none;
+  opacity: 0.90;
+}
+

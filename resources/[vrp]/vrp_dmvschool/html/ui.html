@@ -1,0 +1,101 @@
+<head>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="questions.js" type="text/javascript"></script>
+	<script src="scripts.js" type="text/javascript"></script>
+	<script src="debounce.min.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+	<img id="cursor" src="cursor.png">
+	<div class="full-screen">
+		<div class="question-container">
+			<!-- header -->
+			<div class="header">
+				<h1>Detran</h1>
+			</div>
+			<!-- home -->
+			<div class="body home">
+				<div class="content">
+					<!-- ICI BREVE PRESENTATION --> 
+					<center><img src="dmv.png" class="logo"><br><p class="bold-text">Bem vindo ao Detran</center>
+					<br><center>Exigimos que todos os nossos cidadãos passem por um teste de teoria antes de obter uma licensa de motorista.<br>Tenha calma, e responda com bom senso, não tome nenhuma suposição de sorte.<br><br></center>
+					Teste de Teoria<br>
+					- O teste escrito custa R$ 1000, não há reembolsos se você falhar.<br>
+					- Não se preocupe, o Detran permitirá empréstimos, fique atento para não cair em dívidas maiores!<br>
+					- Se você falhar no teste uma vez, você não pode retomá-lo imediatamente, volte outro dia e tente novamente.<br><br>
+					Teste de direção<br>
+					- O teste de direção custa R$ 1200, como antes, este pagamento não é reembolsado se você falhar no teste.<br>
+					- O objetivo principal do teste de direção é a atenção aos detalhes, preste atenção ao seu arredor e não se choque!</p>
+				</div>
+				<div class="buttonspot">
+				<a href="#" class="button btnQuestion">Start</a>
+				</div>
+				<div class ="barre-progression" >
+					<h2>Progresso</h2>
+					<progress class="progression" value="0" max="10" >
+				</div>
+			</div>
+			<!-- Question-->
+			<div class="body questionnaire-container">
+				<div class="content">
+					<h2 id="questionNumero"></h2>
+					<p id="question"></p>
+					<form class="form" id="question-form">
+						<div>
+							<input type="radio" name="question" id="answerA" value="A">
+							<label class="answerA"></label>
+						</div>
+						<div>
+							<input type="radio" name="question" id="answerB" value="B">
+							<label class="answerB"></label>
+						</div>
+						<div>
+							<input type="radio" name="question" id="answerC" value="C">
+							<label class="answerC"></label>
+						</div>		
+						<div>
+							<input type="radio" name="question" id="answerD" value="D">
+							<label class="answerD"></label>
+						</div>
+	              		<button type="submit" id="submit" class="submit">Próxima questão</button>
+	          		</form>
+				</div>
+				<div class ="barre-progression">
+					<h2>Progresso</h2>
+					<progress class="progression" value="0" max="10" >
+				</div>
+			</div>
+			<!-- Résults -->
+			<div class="body resultGood">
+				<div class="content">
+					<center><p class="bold-text">Bom trabalho !</p><br><br>Você fez muito bem durante o teste!<br><br>Agora você pode fechar esta janela e seguir o teste de direção.</center>
+				</div>
+				<div class="buttonspot">
+				<a href="#" class="button btnClose">Fechar</a>
+				</div>
+				<div class ="barre-progression" >
+					<h2>Progresso</h2>
+					<progress class="progression" value="10" max="10" >
+				</div>
+			</div>
+			<div class="body resultBad">
+				<div class="content">
+					<center><p class="bold-text">Você falhou</p><br><br>Você não está pronto para este teste, tente novamente outra hora ...<br><br></center>
+				</div>
+				<div class="buttonspot">
+				<a href="#" class="button btnKick">Fechar</a>
+				</div>
+				<div class ="barre-progression" >
+					<h2>Progresso</h2>
+					<progress class="progression" value="10" max="10" >
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+
+					

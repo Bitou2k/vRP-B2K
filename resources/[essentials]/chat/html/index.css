@@ -1,0 +1,125 @@
+.color-0{color: #ffffff;}
+.color-1{color: #ff4444;}
+.color-2{color: #99cc00;}
+.color-3{color: #ffbb33;}
+.color-4{color: #0099cc;}
+.color-5{color: #33b5e5;}
+.color-6{color: #aa66cc;}
+.color-8{color: #cc0000;}
+.color-9{color: #cc0068;}
+
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.no-grow {
+  flex-grow: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+#app {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  z-index: -99999 !important;
+}
+
+.chat-window {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 35% !important;
+  height: 165px !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  -webkit-animation-duration: 2s;
+  z-index: -99999 !important;
+}
+
+
+.chat-messages {
+  position: relative;
+  height: 95%;
+  font-size: 14px;
+  margin: 5px;
+  word-wrap: break-word;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-shadow: 1px 1px #000000;
+  z-index: -99999 !important;
+}
+
+
+.chat-input {
+  font-size: 14px;
+  position: absolute;
+
+  top: 190px;
+  left: 10px;
+  width: 35%;
+
+  box-sizing: border-box;
+  z-index: -99999 !important;
+}
+
+.prefix {
+  position: absolute;
+  margin-top: 4px;
+  left: 5px;
+}
+
+textarea {
+  font-size: 12px !important;
+  display: block;
+  box-sizing: border-box;
+  padding: 5px;
+  padding-left: 27px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  border-width: 0;
+  height: 27px;
+  overflow: hidden;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.msg {
+  margin-bottom: 3px;
+}
+
+.multiline {
+  margin-left: 1.5rem;
+  text-indent: -1.5rem;
+  white-space: pre-line;
+}
+
+.suggestions {
+  list-style-type: none;
+  padding: 5px;
+  padding-left: 27px;
+  font-size: 12px;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgba(44, 62, 80, 1.0);
+  width: 100%;
+}
+
+.help {
+  color: #b0bbbd;
+}
+
+.disabled {
+  color: #b0bbbd;
+}
+
+.suggestion {
+  margin-bottom: 5px;
+}

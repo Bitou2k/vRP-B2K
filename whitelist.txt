@@ -1,0 +1,4 @@
+# SteamHEX ID Whitelist - One per Line
+steam:11000010xxxxxxx
+steam:11000010xxxxxxx
+steam:11000010xxxxxxx
