@@ -171,7 +171,7 @@ cfg.groups = {
 	
 	-- ALL
 	"police.base",
-	"portas.policia.sala",
+	"portas.policia",
   },
   -- ################# POLICIA MILITAR #################
   -- Recruta, Soldado, Cabo, 3ºSGT, 2ºSGT, 1ºSGT, SubTenente, 2ºTenente, 1ºTenente, Capitao, Major, Tenente-Coronel, Coronel [PM]
@@ -196,7 +196,7 @@ cfg.groups = {
 	"bank.police",
 	"lojinha.police",
 	"rota.armas",
-	"portas.policia.sala",
+	"portas.policia",
   },
   ["Tenente-Coronel [RT]"] = {
     _config = { gtype = "job", onjoin = police_onjoin, onspawn = police_onspawn, onleave = police_onleave },
@@ -215,7 +215,7 @@ cfg.groups = {
 	"bank.police",
 	"lojinha.police",
 	"rota.armas",
-	"portas.policia.sala",
+	"portas.policia",
   },
   ["Major [RT]"] = {
      _config = { gtype = "job", onjoin = police_onjoin, onspawn = police_onspawn, onleave = police_onleave },
@@ -234,7 +234,7 @@ cfg.groups = {
 	"bank.police",
 	"lojinha.police",
 	"rota.armas",
-	"portas.policia.sala",
+	"portas.policia",
   },
   ["Capitao [RT]"] = {
     _config = { gtype = "job", onjoin = police_onjoin, onspawn = police_onspawn, onleave = police_onleave },
@@ -253,7 +253,7 @@ cfg.groups = {
 	"bank.police",
 	"lojinha.police",
 	"rota.armas",
-	"portas.policia.sala",
+	"portas.policia",
   },
   ["Soldado [RT]"] = {
     _config = { gtype = "job", onjoin = police_onjoin, onspawn = police_onspawn, onleave = police_onleave },
@@ -272,7 +272,7 @@ cfg.groups = {
 	"bank.police",
 	"lojinha.police",
 	"rota.armas",
-	"portas.policia.sala",
+	"portas.policia",
   },
   -- 3ºSGT, 2ºSGT, 1ºSGT, SubTenente, 2ºTenente, 1ºTenente [FT]
   ["1ºTenente [FT]"] = {
