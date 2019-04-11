@@ -1,8 +1,9 @@
 # vRP-B2K
 Base vRP (versão 0.5) modificada para o servidor B2K Roleplay. http://bitou2k.com/discord
 
-# Discord
+# Socials
 
+Dev Twitch: www.twitch.tv/beetle2k
 Entre no discord do B2K Development para mais novidades: https://discord.gg/chfSzQV
 
 # Modificações B2K:
