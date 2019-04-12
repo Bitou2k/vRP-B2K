@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Xander's Security Cameras</title>
+        <style>
+            html {
+                overflow-x: hidden;
+                overflow-y: hidden;
+            }
+            #Camera_Container {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 20px;
+                background-color: transparent !important;
+            }
+            #Camera_Label {
+                position: relative;
+                font-weight: bold;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="Camera_Container" v-show="camerasOpen">
+            <div id="Camera_Label">{{ cameraBoxLabel }}</div>
+            <div id="Camera_Label">{{ cameraLabel }}</div>
+        </div>
+        <script src="vue.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
