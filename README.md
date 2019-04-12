@@ -4,7 +4,7 @@ Base vRP (versão 0.5) modificada para o servidor B2K Roleplay. http://bitou2k.c
 # Socials
 
 Dev Twitch: www.twitch.tv/beetle2k
-Entre no discord do B2K Development para mais novidades: https://discord.gg/chfSzQV
+Entre no discord do B2K Development para mais novidades: https://discord.gg/a2KuFUb
 
 # Modificações B2K:
 
@@ -139,7 +139,7 @@ HOME = Player List
 - /parall = Give Parachutes to everyone online.
 
 # B2K Development Discord:
-https://discord.gg/chfSzQV
+https://discord.gg/a2KuFUb
 
 # Credits
 ImagicTheCat (vRP Framework)
