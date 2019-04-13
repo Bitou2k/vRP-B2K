@@ -187,7 +187,7 @@ for group,vehicles in pairs(vehicle_groups) do
 								maxCarsPerm = -1
 							end
 							
-							if maxCarsPerm ~= -1 and row[1].qtd >= maxCarsPerm then
+							if maxCarsPerm ~= -1 and row2[1].qtd >= maxCarsPerm then
 								vRPclient.notify(player,{"~r~Limite de Veículos por Dono atingido. (Max: " .. maxCarsPerm ..")"})
 							else
 								if vRP.tryPayment(user_id,priceBuyCar) then
