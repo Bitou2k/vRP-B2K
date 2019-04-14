@@ -410,7 +410,7 @@ Citizen.CreateThread(function()
 
 
         -- Steam Whitelist
-        local steamNotWhitelisted = false
+        local steamNotWhitelisted = true
         local wlList = {}
         for line in io.lines("whitelist.txt") do
             table.insert(wlList, tostring(line))
