@@ -1,3 +1,4 @@
+local vRPConfig = module("cfg/base")
 local Config = {}
 ----------------------------------------------------------------------------------------------------------------------
 -- Priority list can be any identifier. (hex steamid, steamid32, ip) Integer = power over other priorities
@@ -410,7 +411,7 @@ Citizen.CreateThread(function()
 
 
         -- Steam Whitelist
-        local steamNotWhitelisted = false
+        local steamNotWhitelisted = not vRPConfig.steamhex
         local wlList = {}
         for line in io.lines("whitelist.txt") do
             table.insert(wlList, tostring(line))

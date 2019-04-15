@@ -94,6 +94,7 @@ function vRP.setBankMoney(user_id,value)
     tmp.bank = value
   end
   local source = vRP.getUserSource(user_id)
+  TriggerClientEvent('vrp:displayBank', source, value) -- gcphone
 end
 
 -- give bank money

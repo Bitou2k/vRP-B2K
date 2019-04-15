@@ -225,12 +225,17 @@ end
 
 local function ch_select(player,choice)
   local user_id = vRP.getUserId(player)
+  local hasCooldown = cfg.jobcooldown or false
+  local cooldownTime = cfg.jobcooldowntime or 0
   if user_id ~= nil then
-    vRP.request(player,"Deseja escolher este Emprego? ("..choice..") - Cooldown 40m", 30, function(player, ok)
+    vRP.request(player,"Deseja escolher este Emprego? ("..choice..")", 30, function(player, ok)
   		if ok then
   			vRP.getUData(user_id,"jobdelay", function(data)
   				local delay = json.decode(data) or 0
-  				if ((os.time() >= delay+1*40*60) or vRP.hasPermission(user_id,"vip.delayjob")) then
+          if not hasCooldown then
+            delay = 0
+          end
+  				if ((os.time() >= delay+1*cooldownTime*60) or vRP.hasPermission(user_id,"vip.delayjob")) then
   					delay = os.time()
   					vRP.setUData(user_id,"jobdelay", json.encode(delay))
   					vRP.addUserGroup(user_id, choice)
@@ -239,7 +244,7 @@ local function ch_select(player,choice)
   						vRP.stopMission(player)
   					end
   				else
-  					vRPclient.notify(player, {"Você deve aguardar 40m para trocar de emprego novamente."})
+  					vRPclient.notify(player, {"Você deve aguardar "..cooldownTime.."m para trocar de emprego novamente."})
   				end
   			end)
   		end

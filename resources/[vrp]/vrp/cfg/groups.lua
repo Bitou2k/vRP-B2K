@@ -797,6 +797,9 @@ cfg.users = {
 -- _config
 --- x,y,z, blipid, blipcolor, permissions (optional)
 
+cfg.jobcooldown = false -- job change cooldown
+cfg.jobcooldowntime = 40 -- cooldown time in minutes
+
 cfg.selectors = {
   ["Agencia de Empregos"] = {
     _config = {x = -1081.9705810547, y = -247.76556396484, z = 37.763282775879, blipid = 269, blipcolor = 47},

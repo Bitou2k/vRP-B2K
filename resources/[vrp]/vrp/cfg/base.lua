@@ -11,6 +11,7 @@ cfg.db = {
 
 cfg.save_interval = 15 -- seconds
 cfg.whitelist = true -- enable/disable whitelist
+cfg.steamhex = false -- enable/disable steamhex whitelist
 cfg.ignore_ip_identifier = true -- This will allow multiple same IP connections (for families etc)
 
 -- delay the tunnel at loading (for weak connections)
