@@ -144,8 +144,8 @@ function tvRP.spawnGarageVehicle(name,pos) -- one vehicle per vname/model allowe
 
       SetModelAsNoLongerNeeded(mhash)
 
-      local netent = NetToEnt(netveh)
-      SetEntityAsNoLongerNeeded(netent)
+      --local netent = NetToEnt(netveh)
+      --SetEntityAsNoLongerNeeded(netent)
       --if IsEntityAVehicle(nveh) then
 		  --  vRPserver.resetCooldown()
       --end
