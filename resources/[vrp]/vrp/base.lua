@@ -192,7 +192,7 @@ end
 
 --- sql
 function vRP.setBanned(user_id,banned)
-  MySQL.execute("vRP/set_banned", {user_id = user_id, banned = true})
+  MySQL.execute("vRP/set_banned", {user_id = user_id, banned = banned})
 end
 
 --- sql
